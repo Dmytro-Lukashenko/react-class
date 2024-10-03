@@ -1,10 +1,13 @@
-import Users from './components/Users';
+import UserFinder from './components/UserFinder';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
-    <div>
-      <Users />
-    </div>
+    <ErrorBoundary>
+      <div>
+        <UserFinder />
+      </div>
+    </ErrorBoundary>
   );
 }
 
